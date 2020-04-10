@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <style>
+        body {
+            background-image: url('pexels2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Notes</title>
@@ -22,10 +30,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">VISHAL KUMAR <span class="sr-only">(current)</span></a>
                 </li>
- 
+
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
@@ -34,11 +43,15 @@
     <div class="container my-3">
         <h1>Welcome to Magic Notes</h1>
         <div class="card">
-
             <div class="card-body">
+
+                <div class="form-group">
+                    <h5 class="card-title">Add a title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title"
+                        placeholder="Enter Title">
+                </div>
                 <h5 class="card-title">Add a note</h5>
                 <div class="form-group">
-
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
                 </div>
                 <button class="btn btn-primary" id="addBtn">Add Note</button>
@@ -56,10 +69,7 @@
                     <a href="#" class="btn btn-primary">Dlete Note</a>
                 </div>
             </div>
-
-            
-
-</div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
